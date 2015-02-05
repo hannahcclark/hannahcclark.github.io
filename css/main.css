@@ -3,42 +3,98 @@ html {
     background: url(../imgs/abstract_warm_background.jpg) no-repeat center center fixed;
     background-size:cover;
     font-family: serif;
+    color: #f08080;
+}
+
+a:link{
 }
 .header {
-    padding: 5px 50px;
-    margin:0%;
-    width:100%
+    position: fixed;
+    top: 0px;
+    left:0px;
+    right:0px;
+    padding-left:50px;
+    height:150px;
     background: -webkit-linear-gradient(left, rgba(255, 250, 245, .9) , rgba(255, 250, 245, .4)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, rgba(255, 250, 245, .9) , rgba(255, 250, 245, .4)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, rgba(255, 250, 245, .9) , rgba(255, 250, 245, .4)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, rgba(255, 250, 245, .9) , rgba(255, 250, 245, .4));
     /*background-color: #fffaf0;*/
-    color: #f08080;
     font-size: 48px;
 }
 
-.sidebar {
-    /*position: relative;*/
-    float:left;
-    margin-left: 45px;
-    margin-top:5%;
-    background-color: rgba(255, 250, 245, .7);
+.content a:link {
     color: #f08080;
+}
+.content a:visited {
+    color: #f08080;
+}
+
+.sidebar {
+    position:fixed;
+    left: 50px;
+    top:200px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#b03060;
     width:200px;
+    height:120px;
+    font-size: 24px;
+    padding:0px;
+    /*align-content: flex-start;*/
+}
+.sidebar ul {
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    margin:0px;
+    left:51px;
+    top:201px;
+    width:200px;
+    height:120px;
+    list-style-type: none;
+    padding:0px;
+}
+
+.sidebar ul li  {
+    background-color: rgba(255, 250, 245, .7);
+    border-style:solid;
+    border-width:1px;
+    border-color:#b03060;
+    padding:10px;
     font-size: 24px;
 }
 
-.sidebar > ul > li {
-    list-style-type: none;
+.sidebar ul li  a:link {
+    text-decoration:none;
+    color: #f08080;
+}
+
+.sidebar ul li a:visited {
+    text-decoration:none;
+    color: #f08080;
+    padding:10px;
+}
+
+.sidebar ul li.curpage a:link{
+    text-decoration:none;
+    color:#b03060;
+}
+
+.sidebar ul li.curpage a:visited{
+    text-decoration:none;
+    color:#b03060;
 }
 
 .content {
-    position: relative;
+    position: fixed;
     left: 300px;
-    margin-top: 5%;
-    margin-right: 5%;
-    width: 60%;
+    top:200px;
+    width: 50%;
     padding: 30px;
     background-color: rgba(255, 250, 240, .7);
     color: #f08080;
+    border-style:solid;
+    border-width:2px;
+    border-color:#b03060;
 }

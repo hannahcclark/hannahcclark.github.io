@@ -1,0 +1,44 @@
+html {
+    height:100%;
+    background: url(../imgs/abstract_warm_background.jpg) no-repeat center center fixed;
+    background-size:cover;
+    font-family: serif;
+}
+.header {
+    padding: 5px 50px;
+    margin:0%;
+    width:100%
+    background: -webkit-linear-gradient(left, rgba(255, 250, 245, .9) , rgba(255, 250, 245, .4)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(255, 250, 245, .9) , rgba(255, 250, 245, .4)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(255, 250, 245, .9) , rgba(255, 250, 245, .4)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(255, 250, 245, .9) , rgba(255, 250, 245, .4));
+    /*background-color: #fffaf0;*/
+    color: #f08080;
+    font-size: 48px;
+}
+
+.sidebar {
+    /*position: relative;*/
+    float:left;
+    margin-left: 45px;
+    margin-top:5%;
+    background-color: rgba(255, 250, 245, .7);
+    color: #f08080;
+    width:200px;
+    font-size: 24px;
+}
+
+.sidebar > ul > li {
+    list-style-type: none;
+}
+
+.content {
+    position: relative;
+    left: 300px;
+    margin-top: 5%;
+    margin-right: 5%;
+    width: 60%;
+    padding: 30px;
+    background-color: rgba(255, 250, 240, .7);
+    color: #f08080;
+}

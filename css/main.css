@@ -6,10 +6,8 @@ html {
     color: #f08080;
 }
 
-a:link{
-}
-.header {
-    position: fixed;
+#topbar {
+    position: absolute;
     top: 0px;
     left:0px;
     right:0px;
@@ -23,15 +21,8 @@ a:link{
     font-size: 48px;
 }
 
-.content a:link {
-    color: #f08080;
-}
-.content a:visited {
-    color: #f08080;
-}
-
-.sidebar {
-    position:fixed;
+#nav_bar {
+    position:absolute;
     left: 50px;
     top:200px;
     border-style:solid;
@@ -41,22 +32,22 @@ a:link{
     height:120px;
     font-size: 24px;
     padding:0px;
+    border-radius: 15px/15px;
     /*align-content: flex-start;*/
 }
-.sidebar ul {
+#nav_bar ul {
     display:flex;
     flex-direction: column;
-    position:fixed;
+    position:absolute;
     margin:0px;
-    left:51px;
-    top:201px;
     width:200px;
     height:120px;
     list-style-type: none;
     padding:0px;
+    border-radius: 15px;
 }
 
-.sidebar ul li  {
+#nav_bar ul li  {
     background-color: rgba(255, 250, 245, .7);
     border-style:solid;
     border-width:1px;
@@ -65,36 +56,78 @@ a:link{
     font-size: 24px;
 }
 
-.sidebar ul li  a:link {
+#nav_bar ul li.topelem {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#nav_bar ul li.bottomelem {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#nav_bar ul li  a:link {
     text-decoration:none;
     color: #f08080;
 }
 
-.sidebar ul li a:visited {
+#nav_bar ul li a:visited {
     text-decoration:none;
     color: #f08080;
     padding:10px;
 }
 
-.sidebar ul li.curpage a:link{
+#nav_bar ul li.currpage a:link{
     text-decoration:none;
     color:#b03060;
 }
 
-.sidebar ul li.curpage a:visited{
+#nav_bar ul li.currpage a:visited{
     text-decoration:none;
     color:#b03060;
 }
 
-.content {
-    position: fixed;
+#content {
+    position: absolute;
     left: 300px;
     top:200px;
     width: 50%;
     padding: 30px;
+    margin-bottom: 10%;
     background-color: rgba(255, 250, 240, .7);
     color: #f08080;
     border-style:solid;
     border-width:2px;
     border-color:#b03060;
+    line-height: 125%;
+    border-radius: 30px;
+}
+
+#content a:link {
+    color: #f08080;
+}
+#content a:visited {
+    color: #f08080;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.slant {
+    font-style: italic;
+}
+
+/***** RESUME ****/
+.resume-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight:bold;
+
+}
+.resume-section {
+    font-size: 24px;
+    font-weight:600;
+}
+ul.resume-s-list{
+    list-style-type: none;
 }

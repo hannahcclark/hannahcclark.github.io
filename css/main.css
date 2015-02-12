@@ -20,7 +20,7 @@ html {
     font-size: 48px;
 }
 
-#nav_bar {
+#nav {
     position:absolute;
     left: 50px;
     top:200px;
@@ -33,7 +33,7 @@ html {
     padding:0px;
     border-radius: 15px/15px;
 }
-#nav_bar ul {
+#nav ul {
     display:flex;
     flex-direction: column;
     position:absolute;
@@ -45,7 +45,7 @@ html {
     border-radius: 15px;
 }
 
-#nav_bar ul li  {
+#nav ul li  {
     background-color: rgba(255, 250, 245, .7);
     border-style:solid;
     border-width:1px;
@@ -54,32 +54,32 @@ html {
     font-size: 24px;
 }
 
-#nav_bar ul li.topelem {
+#nav ul li.topelem {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-#nav_bar ul li.bottomelem {
+#nav ul li.bottomelem {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
-#nav_bar ul li  a:link {
+#nav ul li  a:link {
     text-decoration:none;
     color: #f08080;
 }
 
-#nav_bar ul li a:visited {
+#nav ul li a:visited {
     text-decoration:none;
     color: #f08080;
     padding:10px;
 }
 
-#nav_bar ul li.currpage a:link{
+#nav ul li.currpage a:link{
     text-decoration:none;
     color:#b03060;
 }
 
-#nav_bar ul li.currpage a:visited{
+#nav ul li.currpage a:visited{
     text-decoration:none;
     color:#b03060;
 }

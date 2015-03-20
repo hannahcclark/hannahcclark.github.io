@@ -149,3 +149,6 @@ html {
 ul.nobullet-list{
     list-style-type: none;
 }
+hr {
+    border-color: inherit;
+}

@@ -150,5 +150,6 @@ ul.nobullet-list{
     list-style-type: none;
 }
 hr {
+    width: 90%;
     border-color: inherit;
 }
